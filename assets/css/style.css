@@ -1,0 +1,551 @@
+@charset "utf-8";
+
+body,h1,h2,h3,h4,dl,dt,dd,ul,li,p{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+img{
+    vertical-align: bottom;
+}
+
+body{
+    font-family:"Yu Gothic","Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+    color: #444;
+}
+
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+#wrap{
+    width: 1260px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header{
+    background-color: #1b1464;
+}
+
+.df{
+    display: flex;
+}
+
+.df_sp{
+    display: flex;
+}
+
+.jc_sb{
+    justify-content: space-between;
+}
+
+.jc_r{
+    justify-content: right;
+}
+
+.inner{
+    margin-left: auto;
+    box-sizing: border-box;
+    width: 1080px;
+}
+
+.sp_nav_js{
+    position: absolute;
+    z-index: 100;
+}
+
+.hmb_btn{
+    display: none;
+    position: fixed;
+    top: 40px;
+    right: 30px;
+}
+
+.sp_nav{
+    display: none;
+    position: fixed;
+    width: 330px;
+    text-align: right;
+    top: 100px;
+    right: 30px;
+}
+
+.sp_nav li{
+    height: 40px;
+}
+
+.sp_nav a{
+    color: #000;
+    font-weight: normal;
+    text-decoration: none;
+    text-align: right;
+    text-shadow:
+    #fff 2px 2px 3px, /*右下*/
+    #fff -2px -2px 3px, /*左上*/
+    #fff 2px -2px 3px, /*右上*/
+    #fff -2px 2px 3px, /*左下*/
+    #fff 2px 2px 3px,
+    #fff -2px -2px 3px,
+    #fff 2px -2px 3px,
+    #fff -2px 2px 3px,
+    #fff 2px 2px 3px
+    ;
+}
+
+.hd_content{
+    margin-bottom: 10px;
+    padding-left: 20px;
+}
+
+.hd_sns{
+    height: 35px;
+    margin-top: 20px;
+}
+
+.hd_sns li{
+    width: 35px;
+    height: 35px;
+    margin-right: 7px;
+}
+
+.hd_sns li a{
+    text-decoration: none;
+    color: transparent;
+    font-size: 0;
+    line-height: 0;
+    display: block;
+    box-sizing: border-box;
+    width: 35px;
+    height: 35px;
+}
+
+.twitter{
+    background-image: url(../images/sns_bt_twi.png);
+    background-repeat: no-repeat;
+}
+
+.facebook{
+    background-image: url(../images/sns_bt_face.png);
+    background-repeat: no-repeat;
+}
+
+.pint{
+    background-image: url(../images/sns_bt_pin.png);
+    background-repeat: no-repeat;
+}
+
+.insta{
+    background-image: url(../images/sns_bt_inst.png);
+    background-repeat: no-repeat;
+}
+
+.line{
+    background-image: url(../images/sns_bt_line.png);
+    background-repeat: no-repeat;
+}
+
+.mail{
+    background-image: url(../images/sns_bt_mail.png);
+    background-repeat: no-repeat;
+}
+
+.phone{
+    margin-top: 20px;
+    background-image: url(../images/bt_tle.png);
+    background-repeat: no-repeat;
+    padding-left: 40px;
+    margin-left: 75px;
+}
+
+.phone a{
+    font-size: 29px;
+    color: #fff;
+}
+
+.nav li{
+    margin-right: 23px;
+    margin-bottom: 10px;
+}
+
+.nav li a{
+    text-decoration-line: none;
+    color: transparent;
+    box-sizing: border-box;
+    width: 87px;
+    height: 64px;
+    display: block;
+}
+
+.home{
+    background-image: url(../images/nav_home_d.png);
+    background-repeat: no-repeat;
+    /* padding: 30px; */
+    box-sizing: border-box;
+}
+
+.home:hover{
+    background-image: url(../images/nav_home.png);
+    background-repeat: no-repeat;
+}
+
+.menu{
+    background-image: url(../images/nav_menu_d.png);
+    background-repeat: no-repeat;
+    /* padding: 30px; */
+    box-sizing: border-box;
+}
+
+.menu:hover{
+    background-image: url(../images/nav_menu.png);
+    background-repeat: no-repeat;
+}
+
+.about{
+    background-image: url(../images/nav_about_d.png);
+    background-repeat: no-repeat;
+    /* padding: 30px; */
+    box-sizing: border-box;
+}
+
+.about:hover{
+    background-image: url(../images/nav_about.png);
+    background-repeat: no-repeat;
+}
+
+.shop{
+    background-image: url(../images/nav_shop_d.png);
+    background-repeat: no-repeat;
+    /* padding: 30px; */
+    box-sizing: border-box;
+}
+
+.shop:hover{
+    background-image: url(../images/nav_shop.png);
+    background-repeat: no-repeat;
+}
+
+.company{
+    background-image: url(../images/nav_company_d.png);
+    background-repeat: no-repeat;
+    /* padding: 30px; */
+    box-sizing: border-box;
+}
+
+.company:hover{
+    background-image: url(../images/nav_company.png);
+    background-repeat: no-repeat;
+}
+
+.contact{
+    background-image: url(../images/nav_contact_d.png);
+    background-repeat: no-repeat;
+    /* padding: 30px; */
+    box-sizing: border-box;
+}
+
+.contact:hover{
+    background-image: url(../images/nav_contact.png);
+    background-repeat: no-repeat;
+}
+
+#slide{
+    height: 650px;
+}
+
+#slide ul{
+    position: relative;
+    box-sizing: border-box;
+}
+
+#slide li{
+    position: absolute;
+    width: 100%;
+}
+
+.sp_mainphoto{
+    display: none;
+}
+
+h1{
+    text-align: center;
+}
+
+.kodawari{
+    background: linear-gradient(to top, rgba(252, 126, 252, 0.418) 0% 50%, rgba(0,0,0,0) 50% 100%)
+}
+
+.box1 p{
+    line-height: 3;
+    text-align: center;
+}
+
+.box2 p{
+    width: 365px;
+    margin-left: 100px;
+    line-height: 3;
+}
+
+.glten{
+    background: linear-gradient(to top, rgba(72, 254, 170, 0.418) 0% 50%, rgba(0,0,0,0) 50% 100%)
+}
+
+.news{
+    background: linear-gradient(to top, rgba(255, 219, 201, 0.418) 0% 50%, rgba(0,0,0,0) 50% 100%)
+}
+
+.box1, .box2, .box3{
+    margin-bottom: 80px;
+}
+
+.box2{
+    background-image: url(../images/gltenfree_bg2.png);
+    background-repeat: no-repeat;
+    height: 480px;
+}
+
+.box2 h1{
+    color: #fff;
+    padding-top: 10px;
+}
+
+.box2 p{
+    color: #fff;
+}
+
+.box2 .glten_img{
+    margin-bottom: -40px;
+}
+
+.box3 dl{
+    margin-left: 150px;
+    width: 700px;
+}
+
+.box3 dt{
+    float: left;
+    clear: left;
+    width: 165px;
+    line-height: 3;
+    height: 3;
+}
+
+.box3 dd{
+    line-height: 3;
+    height: 3;
+}
+
+.box3 dd a{
+    text-decoration: none;
+    color: #444;
+}
+
+footer{
+    background-color: #1b1464;
+}
+
+.ft_contact{
+    justify-content: center;
+}
+
+.ft_contact li{
+    border: 1px solid #fff;
+    border-radius: 10%;
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+
+.ft_contact .ft_bt1 a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 35px;
+    display: block;
+    box-sizing: border-box;
+    width: 276px;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.ft_contact .ft_bt2{
+    margin-left: 45px;
+}
+
+.ft_bt2 a{
+    text-decoration: none;
+    color: transparent;
+    display: block;
+    box-sizing: border-box;
+    width: 276px;
+    height: 80px;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-image: url(../images/ft_btn_tel_bg.png
+    );
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.ft_sns{
+    padding-bottom: 20px;
+    flex-direction: column-reverse;
+}
+
+.ft_sns p{
+    color: #fff;
+    margin-left: 200px;
+}
+
+.ft_sns .ft_sns_btn{
+    margin-left: 825px;
+    margin-top: -35px;
+}
+
+.ft_sns li{
+    margin-right: 10px;
+}
+
+.ft_sns li a{
+    text-decoration: none;
+    color: transparent;
+    font-size: 0;
+    line-height: 0;
+    display: block;
+    box-sizing: border-box;
+    width: 35px;
+    height: 35px;
+}
+
+
+@media screen and (max-width:640px){
+    テンプレートを書く
+    img{
+        width : 100%;
+        height: auto;
+    }
+
+    #wrap{
+        width: 100%;
+    }
+
+    .inner{
+        width: 100%;
+    }
+
+    /* いらないものを消す */
+    nav .nav{
+        display: none;
+    }
+
+    #slide{
+        display: none;
+    }
+
+    /* 段組みの解除 */
+
+    .df_sp{
+        flex-direction: column;
+    }
+
+    /* widthの解除 */
+
+    .hd_sns{
+        margin-left: auto;
+        margin-top: 0;
+    }
+
+    .phone{
+        margin-top: 20px;
+        margin-left: 50px;
+    }
+
+    .sp_mainphoto{
+        display: block;
+        box-sizing: border-box;
+    }
+
+    .sp_mainphoto img{
+        width: 100%;
+        max-width: 100%;
+        height: 100%;
+        margin-bottom: 30px;
+    }
+
+    .box1, .box2, .box3{
+        width: auto;
+    }
+
+    .box2{
+        height: auto;
+    }
+
+    .box2 p{
+        margin-left: auto;
+    }
+
+    .box3 dl{
+        width: auto;
+        margin-left: 50px;
+    }
+
+    .box3 dt{
+        float: none;
+    }
+
+    .ft_contact li{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .ft_bt1, .ft_bt2{
+        width: auto;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .ft_contact .ft_bt1 a{
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    .ft_contact .ft_bt2 a{
+        height: 56px;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    .ft_contact .ft_bt2{
+        margin-left: auto;
+        margin-bottom: 60px;
+    }
+
+    .ft_sns{
+        padding-bottom: 10px;
+    }
+
+    .ft_sns .ft_sns_btn{
+        margin-bottom: 10px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .ft_sns p{
+        margin-left: 0;
+        text-align: center;
+    }
+
+    /* ハンバーガーボタン */
+    .hmb_btn{
+        display: block;
+    }
+
+}
+
+
+
+
+

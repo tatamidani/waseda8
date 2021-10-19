@@ -1,0 +1,30 @@
+@charset "utf-8";
+
+h1{
+    width: 350px;
+    margin-bottom: 30px;
+}
+
+#wrap{
+    background: linear-gradient(180deg, #1b1464 0%, #1b1464 15%, #eef3f7 15%, #eef3f7 60%, #fff 60%,#fff 100%);
+}
+
+main{
+    background-image: url(../images/top_bottom_bg.png);
+    background-repeat: no-repeat;
+    background-position: left bottom;
+}
+
+.totop{
+    text-align: right;
+    margin-right: 50px;
+    margin-bottom: 50px;
+}
+
+@media screen and (max-width:640px){
+
+    main{
+        background-image: none;
+}
+
+}

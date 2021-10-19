@@ -1,0 +1,421 @@
+main{
+    position: relative;
+}
+
+.title {
+    background-image: url(../images/about/about_bg_2.jpg);
+    background-repeat: repeat;
+    width: 1260px;
+    height: auto;
+    text-align: center;
+    padding-top: 90px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+h1 {
+    font-size: 52px;
+    color: #fff;
+}
+
+.title>p,
+.blue_b>p {
+    color: #fff;
+    padding-bottom: 300px;
+}
+
+p {
+    font-size: 16px;
+}
+
+/* main↓ */
+
+
+/* fish↓ */
+
+.fish_w img,
+.glu_w img {
+    /* padding-left: 30px; */
+    /* padding-right: 110px; */
+    /* padding-top: 20px; */
+    /* padding-bottom: 20px; */
+    padding: 20px 110px 20px 30px;
+}
+
+.tea_lb img {
+    padding-left: 50px;
+    padding-top: 265px;
+    padding-bottom: 220px;
+}
+
+.blue_b img {
+    padding-left: 90px;
+    padding-top: 265px;
+}
+
+.relative {
+    background-color: #eef3f7;
+    width: 1260px;
+    height: 917px;
+    padding-bottom: 216px;
+    padding-right: 150px;
+    padding-left: 180px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.start {
+    text-align: start;
+}
+
+.ex1 {
+    width: 345px;
+    height: auto;
+    margin-top: 165px;
+}
+
+.ex2 {
+    width: 370px;
+    height: auto;
+    margin-top: 390px;
+    padding-right: 20px;
+}
+
+.ex3 {
+    width: 370px;
+    height: auto;
+    margin-top: 150px;
+}
+
+.ex4 {
+    width: 325px;
+    height: auto;
+    margin-top: 400px;
+}
+
+.fish_w,
+.glu_w {
+    background-color: #fff;
+    width: 1080px;
+    padding-left: 28px;
+    box-sizing: border-box;
+}
+
+.fish_w {
+    position: absolute;
+    top: -225px;
+    left: 180px;
+    height: 450px;
+}
+
+.tea_lb {
+    background: none;
+    width: 850px;
+    height: 480px;
+    padding-left: 80px;
+    margin-right: 145px;
+    box-sizing: border-box;
+}
+
+.glu_w {
+    position: absolute;
+    top: 1225px;
+    left: 180px;
+    padding-top: 20px;
+}
+
+.blue_b {
+    background: none;
+    width: 850px;
+    height: 673px;
+    margin-left: 180px;
+    padding-left: 85px;
+    padding-top: 10px;
+    box-sizing: border-box;
+}
+
+.totop{
+    position: absolute;
+    right: 10px;
+    bottom: 80px;
+}
+
+@media screen and (max-width:640px){
+
+    /* テンプレートを書く */
+    img{
+        width : auto;
+        height: auto;
+    }
+
+    #wrap{
+        width: auto;
+    }
+
+    .inner{
+        width: auto;
+    }
+
+    /* いらないものを消す */
+    nav .sp_nav{
+        display: none;
+    }
+
+    /* 段組みの解除 */
+
+
+    main .relative .df{
+        display: block;
+    }
+    main .tea_lb{
+        display: block;
+    }
+    main .glu_w{
+        display: block;
+    }
+    main .blue_b{
+        display: block;
+    }
+    
+    /* widthの解除 */
+
+    .title {
+        width: auto;
+        height: auto;
+    }
+
+    /* fish↓ */
+
+    .fish_w img{
+        padding: 0;
+    }
+    
+    .fish_w {
+    width: auto;
+    padding-left: 0;
+    box-sizing: none;
+    }
+
+    .fish_w {
+    position: static;
+    top:0;
+    left:0;
+    height: auto;
+    }
+
+    .ex1 {
+    width: auto;
+    height: auto;
+    margin-top:0;
+    }
+    
+    .relative {
+    width: auto;
+    height: auto;
+    padding: 0;
+    box-sizing: none;
+    position: none;
+    }
+
+    /* tea↓ */
+    .tea_lb img {
+    padding: 0px;
+    }
+
+    .tea_lb {
+    width: auto;
+    height: auto;
+    padding: 0;
+    margin:0;
+    box-sizing: none;
+    }
+
+    .ex2 {
+    width: auto;
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+
+    /* glu↓ */
+    .glu_w img {
+    padding: 0;
+}
+    .glu_w {
+    width: auto;
+    padding: 0;
+    box-sizing: none;
+}
+
+    .glu_w {
+    position: static;
+    top: 0;
+    left: 0;
+    padding: 0;
+}
+
+    .ex3 {
+    width: auto;
+    height: auto;
+    margin: 0;
+}
+
+    /* blue↓ */
+    .blue_b img {
+    padding: 0;
+}
+
+    .blue_b {
+    width: auto;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    box-sizing: none;
+}
+    .ex4 {
+    width: auto;
+    height: auto;
+    margin:0;
+}
+    .blue_b {
+    width: auto;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    box-sizing: none;
+}
+    .blue_b>p {
+    padding: 0;
+    }
+
+
+
+    /* レスポンシブ */
+
+    .title>p{
+    color: #fff;
+    padding-bottom: 100px;
+    }
+
+    /* fish↓ */
+
+    main .relative .fish_w{
+        box-sizing: border-box;
+    }
+    main .relative .fish_w img{
+        width: 85%;
+        padding: 10px;
+        margin-left: 20px;
+    }
+    
+    main .relative .fish_w h2{
+        height: 335px;
+    }
+    main .relative .fish_w p{
+        margin: 5px;
+        padding-bottom: 20px;
+        text-align: center;
+        font-size: 14px;
+    }
+
+    /* tea↓ */
+
+    main  .relative .tea_lb{
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    main .relative .tea_lb img{
+        width: 85%;
+        padding: 10px;
+        margin-left: 17px;
+    }
+
+    main .relative .tea_lb h2{
+        height: 335px;
+    }
+
+    main .relative .tea_lb p{
+        margin: 5px;
+        padding-bottom: 20px;
+        text-align: center;
+        font-size: 14px;
+    }
+
+    /*glu_w */
+
+    main .glu_w{
+        box-sizing: border-box;
+    }
+    main .glu_w img{
+        width: 85%;
+        padding: 10px ;
+        margin-right: 3px;
+    
+        text-align: center;
+    }
+    
+    main .glu_w h2{
+        height: 335px;
+    }
+    main .glu_w p{
+        margin: 5px;
+        padding-bottom: 20px;
+        text-align: center;
+        font-size: 14px;
+    }
+
+        /* blue↓ */
+
+        main  .blue_b{
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column-reverse;
+            margin-bottom: 20px;
+        }
+    
+        main .blue_b img{
+            width: 85%;
+            padding: 10px ;
+            margin-right: 3px;
+        }
+    
+        main .blue_b h2{
+            height: 335px;
+        }
+    
+        main .blue_b p{
+            margin: 5px;
+            padding-bottom: 200px;
+            text-align: center;
+            font-size: 14px;
+        }
+
+        .totop{
+            position: absolute;
+            right: 50px;
+            bottom: 40px;
+        }
+
+
+
+    /* ハンバーガーボタン */
+     .hmb_btn{
+        display: block;
+        position: fixed;
+        top: 40px;
+        left: 300px;
+    }
+    
+    .sp_nav{
+        width: 330px;
+        text-align: right;
+    }
+}
+
+
+
+
+    
+

@@ -1,0 +1,111 @@
+@charset "utf-8";
+
+/* 下層ページ　共通事項 ↓*/
+
+#inner{
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+main{
+    background-image: url(../images/mein_back_bg.jpg);
+    background-repeat: no-repeat;
+    padding-bottom: 180px;
+    position: relative;
+}
+
+main .title{
+    padding: 90px 0 75px;
+    text-align: center;
+    color: #fff; 
+}
+
+main .title h1{
+    font-size: 52px;
+}
+
+main .totop{
+    position: absolute;
+    right: 10px;
+    bottom: 80px;
+}
+
+/* 下層ページ　共通事項 ↑*/
+
+/* mian↓ */
+main .list{
+    background-image: url(../images/menu/main_top_bg.jpg);
+    background-repeat: no-repeat;
+}
+
+/* main 共通終わり↑ */
+
+.content_contact p{
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.content_contact dl{
+    padding-left: 250px;
+}
+
+.content_contact dt{
+    float: left;
+    clear: left;
+    font-weight: bold;
+    width: 150px;
+    height: 80px;
+    text-align: left;
+}
+
+.content_contact dd{
+    font-weight: bold;
+    height: 80px;
+    text-align: left;
+}
+
+span{
+    display: block;
+    color: #f00;
+}
+
+.submit{
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.submit a{
+    background-color: #fd9535;
+    text-decoration: none;
+    color: #444;
+    font-weight: bold;
+    border: 1px dotted #444;
+    border-radius: 4px;
+    padding: 5px 10px;
+}
+
+@media screen and (max-width:640px){
+    /* テンプレートを書く */
+
+    #inner{
+        width: auto;
+    }
+
+    /* いらないものを消す */
+
+     /* widthの解除 */
+
+     .content_contact dl{
+        padding-left: 0;
+    }
+
+    .content_contact dt{
+        box-sizing: border-box;
+        width: 135px;
+        padding-left: 20px;
+    }
+
+}

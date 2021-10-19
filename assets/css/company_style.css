@@ -1,0 +1,186 @@
+@charset "utf-8";
+
+/* 下層ページ　共通事項 ↓*/
+
+#inner {
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+main {
+    background-image: url(../images/mein_back_bg.jpg);
+    background-repeat: no-repeat;
+    padding-bottom: 180px;
+    position: relative;
+}
+
+main .title {
+    padding: 90px 0 69px;
+    text-align: center;
+    color: #fff;
+}
+
+main .title h1 {
+    font-size: 52px;
+}
+
+main .totop {
+    position: absolute;
+    right: 10px;
+    bottom: 80px;
+}
+
+
+/* 下層ページ　共通事項 ↑*/
+
+
+/* mian↓ */
+
+h1 {
+    font-size: 52px;
+    text-align: center;
+}
+
+.main {
+    background-image: url(../assets/images/menu/mein_back_bg.jpg);
+}
+
+h3 {
+    font-size: 16px;
+    font-weight: bold;
+    padding: 15px;
+}
+
+main p {
+    line-height: 2;  
+}
+.start{
+    padding-bottom: 15px;
+}
+
+.company_inner {
+    padding: 50px 75px 70px 75px;
+    background-color: #fff;
+}
+
+.message {
+    width: 450px;
+    height: 395px;
+    padding-left: 20px;
+}
+
+.ceo {
+    padding-left: 60px;
+    text-align: center;
+}
+
+.office {
+    margin-top: 60px;
+}
+
+.office h3>img {
+    padding-right: 40px;
+}
+
+.info dl {
+    width: 380px;
+    height: 300px;
+}
+
+.info dt {
+    float: left;
+    clear: left;
+    width: 100px;
+    line-height: 2;
+    height: 2;
+}
+
+.info dd {
+    margin-left: 120px;
+    line-height: 2;
+    height: 2;
+}
+
+.honsha {
+    text-align: center;
+}
+
+.enkaku {
+    padding-left: 15px;
+}
+
+.enkaku dl {
+    padding-left: 55px;
+    padding-bottom: 5px;
+    width: 635px;
+    height: 105px;
+    line-height: 2;
+}
+
+.enkaku dt {
+    float: left;
+    clear: left;
+    width: 85px;
+}
+
+.enkaku dd {
+    margin-left: 105px;
+}
+
+.rinen {
+    margin-top: 40px;
+    padding-left: 15px;
+}
+
+@media screen and (max-width:640px) {
+    /* テンプレートを書く  */
+
+    #inner {
+        width: 100%;
+    }
+
+    /* いらないものを消す */
+
+    /* 段組みの解除 */
+
+    /* widthの解除 */
+
+    main{
+        padding-bottom: 250px;
+    }
+
+    .office{
+        width: auto;
+    }
+
+    .company_inner{
+        padding: 0;
+    }
+
+    .message{
+        width: auto;
+        height: auto;
+        padding-left: 0;
+    }
+
+    .ceo{
+        padding-left: 0;
+    }
+
+    .info dl{
+        width: auto;
+    }
+
+    .info dd{
+        margin-left: 0;
+    }
+
+    .enkaku dl{
+        padding-left: 0;
+        width: auto;
+        height: auto;
+    }
+
+
+}

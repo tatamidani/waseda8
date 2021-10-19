@@ -1,0 +1,340 @@
+@charset "utf-8";
+
+/* 下層ページ　共通事項 ↓*/
+
+#inner{
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+main{
+    background-image: url(../images/mein_back_bg.jpg);
+    background-repeat: no-repeat;
+    padding-bottom: 180px;
+    position: relative;
+}
+main .title{
+    padding: 90px 0 75px;
+    text-align: center;
+    color: #fff; 
+}
+main .title h1{
+    font-size: 52px;
+
+    
+}
+
+main .totop{
+    position: absolute;
+    right: 10px;
+    bottom: 80px;
+}
+
+/* 下層ページ　共通事項 ↑*/
+
+/* mian↓ */
+main .list{
+    background-image: url(../images/menu/main_top_bg.jpg);
+    background-repeat: no-repeat;
+}
+main .maintop{
+    padding: 40px 15px 20px;
+    box-sizing: border-box
+}
+
+
+
+main .inner .list .maintop .maintopbox1{
+    box-sizing: border-box;
+}
+main .inner .list .maintop .maintopbox2{
+    box-sizing: border-box;
+}
+main .inner .list .maintop .maintopbox3{
+    box-sizing: border-box;
+}
+
+main dl{
+    text-align: center;
+}
+main .maintop dt{
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+main .maintop .maintopbox3 p:nth-child(2){
+    float: left;
+    clear: left;
+    margin-left: 60px;
+}
+main .maintop .maintopbox3 dl{
+    margin-right: 90px;
+}
+
+/* menu↓ */
+
+main .menutop , .menumidole , .menubottom{
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+main .menutop p{
+    text-align: center;
+    margin-top: 10px;
+    font-weight: bold;
+}
+main .menutop .menutopbox2 p:nth-child(2){
+    float: left;
+    clear: left;
+}
+main .menutop .menutopbox2 p:nth-child(3){
+    margin-right: 35px;
+}
+main .menutop>p{
+    align-self: center;
+    font-weight: normal;   
+}
+main .menumidole p{
+    text-align: center;
+    margin-top: 10px;
+    font-weight: bold;
+}
+main .menumidole .menumidolebox1 p:nth-child(2){
+    float: left;
+    clear: left;
+}
+main .menumidole .menumidolebox1 p:nth-child(3){
+    margin-right: 35px;
+}
+main .menumidole>p{
+    align-self: center;
+    font-weight: normal;   
+}
+main .menubottom p{
+    text-align: center;
+    margin-top: 10px;
+    font-weight: bold;
+}
+main .menubottom{
+padding-bottom: 10px;
+}
+main .menubottom>p{
+    align-self: center;
+    font-weight: normal;   
+}
+main .lunch{
+margin: 10px 30px 30px;
+padding-bottom: 20px;
+}
+main .lunch p{
+    text-align: center;
+    margin-top: 10px;
+    font-weight: bold;
+}
+main .lunchmenu {
+    margin-top: 10px;
+}
+main .lunch .lunchbox2, .lunchbox3{
+    border-left: 3px solid gainsboro;
+}
+
+.sikirisen{
+    margin: 0 30px;
+    border: 1px solid gray;
+    opacity: .3;
+}
+
+@media screen and (max-width:640px){
+    /* テンプレートを書く */
+
+
+    #wrap{
+        width: auto;
+    }
+
+    #inner{
+        width: auto;
+    }
+
+    main .list{
+        width: 100%;
+    }
+
+    /* いらないものを消す */
+
+    main .lunch .lunchbox2, .lunchbox3{
+        border-left:none;
+    }
+
+    /* 段組みの解除 */
+
+    main .list .maintop{
+        display: block;
+    }
+    /* main .list .menutop{
+        display: block;
+    } */
+
+    main .lunch .lunchmenu{
+        display: block;
+    }
+
+    /* widthの解除 */
+    main .menutop , .menumidole , .menubottom{
+        width: auto;
+    }
+    main .list{
+        background-repeat: repeat-y;
+    }
+
+    /* main top */
+    main .maintop {
+        padding: 10px;
+    }
+    main .maintop img{
+        width: 100%;
+    }
+    main .list .maintop .maintopbox1{
+        margin-left:90px ;
+        width: 170px;
+    }
+    main .list .maintop .maintopbox2{
+        width: 170px;
+        float: left;
+        clear: left;
+    }
+    main .list .maintop .maintopbox3{
+        width: 170px;
+        display: inline-block;
+    }
+    
+    main .list .maintop .maintopbox1 p{
+        text-align: center;
+    }
+    main .list .maintop .maintopbox2 p{
+        text-align: center;
+    }
+    main .list .maintop .maintopbox3 p{
+        text-align: center;
+    }
+    main .maintop .maintopbox3 p:nth-child(2){
+        margin-left: 25px;
+    }
+    main .maintop .maintopbox3 dl{
+        margin-right: 40px;
+    }
+
+    /* menu top */
+    main .menutop img{
+        width: 80%;
+    }
+    main .menutop .menutopbox2 p:nth-child(3) {
+        margin-right: 25px;
+    }
+
+    /* main .list .menutop .menutopbox1,.menutopbox2,.menutopbox3{
+        width:125px;
+    } */
+    main .menumidole img{
+        width: 80%;
+    }
+
+    main .list .menutop .menumidolebox1,.menumidolebox2,.menumidolebox3{
+        width: 125px;
+    }
+    main .menumidole .menumidolebox1 p:nth-child(2) img{
+        margin-top: -10px;
+    }
+    main .menumidole .menumidolebox1 p:nth-child(3){
+        margin-right: 20px;
+        margin-top: 0px;
+    }
+    main .menumidole img{
+        width: 80%;
+    }
+
+    main .list .menutop .menumidolebox1,.menumidolebox2,.menumidolebox3{
+        width: 125px;
+    }
+
+
+    main .list .menubottom .menubottombox1,.menubottombox2,.menubottombox3{
+        width: 131px;
+    }
+
+    main .menubottom img{
+        width: 80%;
+    }
+
+    main .lunch{
+        margin-top: 20px;
+        } 
+
+    main .lunch .lunchbox2, .lunchbox3{
+        margin-top: 20px;
+        border-top: 3px solid gainsboro;
+    }
+}
+
+@media screen and (max-width:320px){
+    /* テンプレートを書く */
+
+
+    #wrap{
+        width: auto;
+    }
+
+    #inner{
+        width: auto;
+    }
+
+    main .list{
+        width: 100%;
+    }
+
+    /* いらないものを消す */
+
+    main .lunch .lunchbox2, .lunchbox3{
+        border-left:none;
+    }
+
+    /* 段組みの解除 */
+
+    main .list .maintop{
+        display: block;
+    }
+    /* main .list .menutop{
+        display: block;
+    } */
+
+    main .lunch .lunchmenu{
+        display: block;
+    }
+
+    /* widthの解除 */
+
+    main .maintop {
+        padding: 10px;
+    }
+    main .maintop img{
+        width: 100%;
+    }
+    main .list .maintop .maintopbox1{
+        margin-left:60px ;
+    }
+    main .list .maintop .maintopbox2{
+        margin-left: 60px;
+    }
+    main .list .maintop .maintopbox3{
+        margin-left: 60px;
+    }
+    main .menutop .menutopbox2 p:nth-child(3) {
+        margin-right: 9px;
+    }
+    
+    main .menumidole .menumidolebox1 p:nth-child(3){
+        margin-right: 4px;
+    }
+}
