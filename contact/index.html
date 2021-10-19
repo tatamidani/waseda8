@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>UOGASHI&nbsp;MUGI</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/menu.css">
+    <link rel="stylesheet" href="../assets/css/contact.css">
+    <script src="../assets/js/jquery-3.6.0.min.js"></script>
+    <script src="../assets/js/script.js"></script>
+    <link rel="icon" href="../mugi_f.ico">
+</head>
+
+<body>
+    <div id="wrap">
+        <header>
+            <div class="hd df_sp jc_sb">
+
+                <p class="logo"><img src="../assets/images/logo.png" alt="logo"></p>
+                <nav class="sp_nav_js">
+                    <div class="hmb_btn">
+                        <img src="../assets/images/nav_btn.png" alt="ハンバーガーボタン">
+                    </div>
+                    <ul class="sp_nav">
+                        <li class="sp_home"><a href="../index.html">HOME</a></li>
+                        <li class="sp_menu"><a href="../menu/index.html">MENU</a></li>
+                        <li class="sp_about"><a href="../about/index.html">ABOUT</a></li>
+                        <li class="sp_shop"><a href="../shop/index.html">SHOP</a></li>
+                        <li class="sp_company"><a href="../company/index.html">COMPANY</a></li>
+                        <li class="sp_contact"><a href="index.html">CONTACT</a></li>
+                    </ul>
+                </nav>
+                <div class="hd_box">
+                    <div class="hd_content df_sp">
+                        <ul class="hd_sns df">
+                            <li class="twitter"><a href="#">twitter</a></li>
+                            <li class="facebook"><a href="#">facebook</a></li>
+                            <li class="pint"><a href="#">pint</a></li>
+                            <li class="insta"><a href="#">insta</a></li>
+                            <li class="line"><a href="#">line</a></li>
+                            <li class="mail"><a href="#">mail</a></li>
+                        </ul>
+                        <p class="phone"><a href="#">054-000-0000</a></p>
+                    </div>
+
+                    <nav>
+                        <ul class="nav df jc_r">
+                            <li class="home"><a href="../index.html">HOME</a></li>
+                            <li class="menu"><a href="../menu/index.html">MENU</a></li>
+                            <li class="about"><a href="../about/index.html">ABOUT</a></li>
+                            <li class="shop"><a href="../shop/index.html">SHOP</a></li>
+                            <li class="company"><a href="../company/index.html">COMPANY</a></li>
+                            <li class="contact"><a href="index.html">CONTACT</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+    </header>
+        <!-- 下層ページ　共通部分↓ -->
+        <main>
+            <div id="inner">
+                <div class="title">
+                    <h1>Contact</h1>
+                    <p>お問い合わせ</p>
+                </div>
+                <!-- 下層ページ　共通部分↑ -->
+                <div class="list">
+                    <div class="content_contact">
+                        <p>お席の予約を承ります。<br>
+                            下記項目をご記入ください。
+                        </p>
+                        <form action="form.php" method="post">
+                            <dl class="clearfix">
+                                <div id="nameSection">
+                                    <dt>
+                                        お名前
+                                        <span class="required">必須</span>
+                                    </dt>
+                                    <dd>
+                                        <input type="text" name="name" id="name" placeholder="例）麦野　麦夫">
+                                        <span class="alert">漢字でご記入ください</span>
+                                    </dd>
+                                </div>
+
+
+                                <div id="kanaSection">
+                                    <dt>
+                                        フリガナ
+                                        <span class="required">必須</span>
+                                    </dt>
+                                    <dd>
+                                        <input type="text" name="kana" id="kana" placeholder="例）ムギノ　ムギオ">
+                                        <span class="alert">全角カタカナでご記入ください</span>
+                                    </dd>
+                                </div>
+
+                                <div id="dateSection">
+                                    <dt>
+                                        ご来店日
+                                        <span class="required">必須</span>
+                                    </dt>
+                                    <dd>
+                                        <input type="date" name="date" id="date">
+                                        <span class="alert">日付を選択してください</span>
+                                    </dd>
+                                </div>
+
+                                <div id="timeSection">
+                                    <dt>
+                                        ご来店時間
+                                        <span class="required">必須</span>
+                                    </dt>
+                                    <dd>
+                                        <select name="time" id="time">
+                                            <option value="none" selected>選択してください</option>
+                                            <option value="10:00">10:00~</option>
+                                            <option value="11:00">11:00~</option>
+                                            <option value="12:00">12:00~</option>
+                                            <option value="13:00">13:00~</option>
+                                            <option value="14:00">14:00~</option>
+                                            <option value="15:00">15:00~</option>
+                                            <option value="16:00">16:00~</option>
+                                            <option value="17:00">17:00~</option>
+                                            <option value="18:00">18:00~</option>
+                                            <option value="19:00">19:00~</option>
+                                        </select>
+                                        <span class="alert">時間を選択してください</span>
+                                    </dd>
+                                </div>
+
+                                <div id="peopleSection">
+                                    <dt>
+                                        人数
+                                        <span class="required">必須</span>
+                                    </dt>
+                                    <dd>
+                                        <select name="people" id="people">
+                                            <option value="none" selected>選択してください</option>
+                                            <option value="peple1">1名</option>
+                                            <option value="peple2">2名</option>
+                                            <option value="peple3">3名</option>
+                                            <option value="peple4">4名</option>
+                                            <option value="peple5">5名</option>
+                                            <option value="peple6">6名</option>
+                                            <option value="peple7">7名</option>
+                                            <option value="peple8">8名</option>
+                                            <option value="peple9">9名</option>
+                                            <option value="peple10">10名</option>
+                                        </select>
+                                        <span class="alert">人数を選択してください</span>
+                                    </dd>
+                                </div>
+
+                                <div id="sheetSection">
+                                    <dt>
+                                        お席の種類
+                                        <span class="required">必須</span>
+                                    </dt>
+                                    <dd>
+                                        <input type="radio" name="radio" value="table" id="table"><label for="table">テーブル席</label><br>
+                                        <input type="radio" name="radio" value="counter" id="counter"><label for="counter">カウンター席</label>
+                                        <span class="alert">お席を選択してください</span>
+                                    </dd>
+                                </div>
+
+                                <div id="mailSection">
+                                    <dt>
+                                        メールアドレス
+                                        <span class="required">必須</span>
+                                    </dt>
+                                    <dd>
+                                        <input type="email" name="email" id="email" placeholder="例）aaa@co.jp">
+                                        <span class="alert">半角英数字でご記入ください</span>
+                                    </dd>
+                                </div>
+
+                                <div id="telSection">
+                                    <dt>
+                                        電話番号
+                                        <span class="required">必須</span>
+                                    </dt>
+                                    <dd>
+                                        <input type="tel" name="tel" id="tel" placeholder="例）000-000-0000">
+                                        <span class="alert">半角英数字でご記入ください</span>
+                                    </dd>
+                                </div>
+
+                            </dl>
+                            <p class="submit"><a href="form.php">確認画面へ進む</a></p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <p class="totop"><a href="#"><img src="../assets/images/bt_totop.png" alt="totop"></a></p>
+        </main>
+        <footer>
+            <ul class="ft_contact df_sp">
+                <li class="ft_bt1"><a href="index.html">Contact</a></li>
+                <li class="ft_bt2"><a href="#">&phone;</a></li>
+            </ul>
+            <div class="ft_sns df_sp jc_sb">
+                <ul class="ft_sns_btn df">
+                    <li class="twitter"><a href="#">twitter</a></li>
+                    <li class="facebook"><a href="#">facebook</a></li>
+                    <li class="pint"><a href="#">pint</a></li>
+                    <li class="insta"><a href="#">insta</a></li>
+                    <li class="line"><a href="#">line</a></li>
+                    <li class="mail"><a href="#">mail</a></li>
+                </ul>
+                <p><small>Uogashi &nbsp; Mugi &copy; All Rights Reserved.</small></p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
